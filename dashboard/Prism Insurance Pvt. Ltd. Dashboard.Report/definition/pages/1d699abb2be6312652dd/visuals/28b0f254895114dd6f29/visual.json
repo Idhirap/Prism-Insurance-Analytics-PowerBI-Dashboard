@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "28b0f254895114dd6f29",
+  "position": {
+    "x": 35.94871446984601,
+    "y": 35.94871446984601,
+    "z": 3000,
+    "height": 209.44033647649414,
+    "width": 357.92415711281461,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "PRISM INSURANCE PVT. LTD.",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontFamily": "Trebuchet MS",
+                      "fontStyle": "italic",
+                      "fontSize": "44pt"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

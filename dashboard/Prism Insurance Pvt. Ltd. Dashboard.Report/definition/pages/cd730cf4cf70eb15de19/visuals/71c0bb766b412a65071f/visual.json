@@ -1,0 +1,116 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "71c0bb766b412a65071f",
+  "position": {
+    "x": 9.37792551387287,
+    "y": 0,
+    "z": 0,
+    "height": 684.58856251271959,
+    "width": 509.53395292042603,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "WordCloud1447959067750",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Customer Feedback"
+                    }
+                  },
+                  "Property": "Feedback"
+                }
+              },
+              "queryRef": "Customer Feedback.Feedback",
+              "nativeQueryRef": "Feedback"
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Customer Feedback"
+                        }
+                      },
+                      "Property": "Feedback"
+                    }
+                  },
+                  "Function": 5
+                }
+              },
+              "queryRef": "Min(Customer Feedback.Feedback)",
+              "nativeQueryRef": "Count of Feedback"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "rotateText": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

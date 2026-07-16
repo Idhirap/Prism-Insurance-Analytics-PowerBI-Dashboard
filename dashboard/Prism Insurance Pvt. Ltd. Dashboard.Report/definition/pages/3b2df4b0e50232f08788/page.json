@@ -1,0 +1,49 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "3b2df4b0e50232f08788",
+  "displayName": "Policy Type Details ",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "a5baf8f50f0eb66d239a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "InsuranceData"
+              }
+            },
+            "Property": "PolicyType"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      }
+    ]
+  },
+  "pageBinding": {
+    "name": "4bd9fedc926a86d1cb7b",
+    "type": "Drillthrough",
+    "parameters": [
+      {
+        "name": "e53bd06cb638d202c887",
+        "boundFilter": "a5baf8f50f0eb66d239a",
+        "asAggregation": false,
+        "qnaSingleSelectRequired": false,
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "InsuranceData"
+              }
+            },
+            "Property": "PolicyType"
+          }
+        }
+      }
+    ]
+  }
+}

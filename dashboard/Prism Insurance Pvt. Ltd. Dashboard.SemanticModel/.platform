@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Prism Insurance Pvt. Ltd. Dashboard"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a85494c9-c2b4-4fb0-adb6-562e6ffe637c"
+  }
+}

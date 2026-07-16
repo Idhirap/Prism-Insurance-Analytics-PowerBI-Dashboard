@@ -1,0 +1,26 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["InsuranceData","Customer Feedback"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table InsuranceData
+ref table DateTableTemplate_0df6fa24-5bd6-40fe-93be-faef205d1128
+ref table LocalDateTable_26db7ddc-f9bd-45c7-a1a9-a2f2170a67a4
+ref table LocalDateTable_c7481f49-c5a5-41e7-a9b7-4ff3101a1b66
+ref table LocalDateTable_e48dd900-ca0c-4ec2-9938-dcec7fc70b20
+ref table 'Customer Feedback'
+
+ref role 'Travel Role'
+ref role 'Health Role'
+
+ref cultureInfo en-US
+

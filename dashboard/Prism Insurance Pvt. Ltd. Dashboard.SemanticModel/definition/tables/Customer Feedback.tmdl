@@ -1,0 +1,35 @@
+table 'Customer Feedback'
+	lineageTag: 971f3b59-bb9e-44f4-929c-d5db7b29b7f3
+
+	column 'Customer Name'
+		dataType: string
+		lineageTag: 967842e2-7c55-44c5-a448-f15b4a27aeab
+		summarizeBy: none
+		sourceColumn: Customer Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Feedback
+		dataType: string
+		lineageTag: c4ff3bf3-8581-4c20-802c-a94a904f733b
+		summarizeBy: none
+		sourceColumn: Feedback
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Customer Feedback' = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\Admin\Desktop\PowerBI\Insurance+Customer+Feedback.xlsx"), null, true),
+				    Sheet1_Sheet = Source{[Item="Sheet1",Kind="Sheet"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(Sheet1_Sheet,{{"Column1", type text}, {"Column2", type text}}),
+				    #"Promoted Headers" = Table.PromoteHeaders(#"Changed Type", [PromoteAllScalars=true]),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Promoted Headers",{{"Customer Name", type text}, {"Feedback", type text}})
+				in
+				    #"Changed Type1"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+
