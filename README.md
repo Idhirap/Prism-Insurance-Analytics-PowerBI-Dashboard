@@ -1,5 +1,6 @@
 # Prism Insurance Analytics Dashboard (Power BI)
 
+
 ## 📌 Project Overview
 
 This project demonstrates an end-to-end Insurance Analytics solution built using
@@ -315,6 +316,7 @@ The project includes:
 Successfully developed and deployed an end-to-end Insurance Analytics solution using SQL Server, Power BI Desktop, Power Query, and Power BI Service. The dashboard enables stakeholders to monitor premium, coverage, and claim performance, analyze customer demographics, track active and inactive policies, and investigate policy-level details through drill-through functionality. Row-Level Security (RLS) was implemented to ensure secure and role-based access to policy data.
 
 ---
+
 ## 📁 Repository Structure
 
 ```text
